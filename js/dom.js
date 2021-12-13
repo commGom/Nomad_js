@@ -1,14 +1,14 @@
 // document 객체 : javascript 가 HTML DOM 에 접근 가능하다.
 // Event 처리 addEventListener("이벤트명",콜백함수);
 // ex) document element event : click, mouseenter, mouseleave
-// ex) window event : resize, copy
+// ex) window event : resize, copy, online, offline (<-wifi 연결 on off)
 
 const title = document.querySelector("h1");
 console.log(title);
 console.log(title.innerText);
 title.innerText = "Got you!";
 function handleTitleClick() {
-    title.style.color = 'red';
+    title.style.backgroundColor = 'yellow';
     console.log('title was clicked');
 }
 
